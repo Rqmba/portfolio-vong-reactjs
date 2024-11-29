@@ -8,6 +8,7 @@ import Contact from './Pages/Contact';
 import Project from './Pages/Project';
 import Skills from './Pages/Skills';
 import About from './Pages/About';
+import Blog from "./Pages/Blog";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Explore projects={data} />} />
           <Route path="/projects" element={<Project />} />
           <Route path="/skills" element={<Skills/>} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>

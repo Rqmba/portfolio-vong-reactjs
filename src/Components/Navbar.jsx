@@ -1,5 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { FaHome, FaProjectDiagram, FaUser, FaAddressBook, FaToolbox } from "react-icons/fa";
+import { FaHome, FaProjectDiagram, FaUser, FaAddressBook, FaToolbox, FaPen } from "react-icons/fa";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ function Navbar() {
       <nav className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-4">
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
-          <h1 className="text-xl font-bold text-white">Web Portfolio &copy; 2024</h1>
+          <h1 className="text-xl font-bold"> J.VONG Portfolio &copy; 2024</h1>
         </div>
 
         {/* Navigation Links */}
@@ -45,6 +45,18 @@ function Navbar() {
             <FaToolbox className="text-2xl mb-1" />
             <p className="text-sm">Compétences</p>
           </div>
+
+
+          <div
+            onClick={() => navigate('/blog')}
+            className={`flex flex-col items-center cursor-pointer hover:text-green-400 ${
+              isActive('/blog') ? 'text-green-500' : 'text-gray-400'
+            }`}
+          >
+            <FaPen className="text-2xl mb-1" />
+            <p className="text-sm">Blog</p>
+          </div>
+
           <div
             onClick={() => navigate('/about')}
             className={`flex flex-col items-center cursor-pointer hover:text-green-400 ${
