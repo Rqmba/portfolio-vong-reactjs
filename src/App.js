@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import DataProjects from './Data/data'
+import Navbar from "./Components/Navbar";
+import Footer from './Components/Footer'
+import Explore from './Pages/Explore';
+import Contact from './Pages/Contact';
+import Project from './Pages/Project';
+import Skills from './Pages/Skills';
+import About from './Pages/About';
+
 
 function App() {
+  const [data, myData] = useState(DataProjects)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Explore projects={data} />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/skills" element={<Skills/>} />
+          <Route path="/about" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 }
 
