@@ -1,22 +1,41 @@
 import ProjectList from "../Components/ProjectList"
+import Projectcard from "../Components/Projectcard"
+import { Navigate, useNavigate } from "react-router-dom"
 
 function Explore({ projects }) {
+
+  const featuredProjects = projects.slice(0, 3)
+
+  const navigate = useNavigate()
+
   return (
     <>
-    <section>
-        <div className="container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
-            <div className="flex flex-col mb-32 space-y-12 md:w-1/2">
-                <h1 className="max-w-lg text-2xl font-bold text-center md:text-3xl md:text-left">
-                    Vong Jordan
-                </h1>
-                <p className="max-w-sm text-center text-gray-400 md:text-left">
-                    Je code principalement sous Node.js, React.js et PHP/Symfony.
-                </p>
-            </div>
+      <section className="container mx-auto px-6 mt-10">
+        <h1 className="text-3xl font-bold mb-6">
+          Bienvenue sur mon Portfolio !
+        </h1>
+        <p className="text-gray-400 mb-10">
+          Découvrez mes projets et mes compétences en développement web
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {featuredProjects.map((project, index) => (
+            <Projectcard 
+            key={index}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+            />
+          ))}
         </div>
+
+        <div className="mt-6 text-center">
+          navigate(to('/projects'))
+        </div>
+
       </section>
-      <h3>Projets</h3>
-      <ProjectList projects={projects} />
+
+
     </>
   )
 }
