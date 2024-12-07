@@ -1,6 +1,9 @@
 import Project from "./Project";
 
 function ProjectList({ projects }) {
+  if (!projects || projects.length === 0) {
+    return <p>Aucun projets disponible.</p>;
+  }
   return (
     <section className="container mx-auto px-6 mt-10">
       <h1 className="text-3xl font-bold mb-6">Mes Projets</h1>
