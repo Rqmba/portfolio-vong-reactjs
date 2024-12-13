@@ -1,10 +1,12 @@
 import { useNavigate } from "react-router-dom";
+import FadeIn from "../Components/FramerMotion/FadeIn";
 
 function Explore({ projects }) {
   const featuredProjects = projects.slice(0, 3);
   const navigate = useNavigate();
 
   return (
+  <FadeIn>  
     <section className="container mx-auto px-6 mt-10">
       <h1 className="text-3xl font-bold mb-6">Bienvenue sur mon Portfolio !</h1>
       <p className="text-gray-400 mb-10">
@@ -43,6 +45,7 @@ function Explore({ projects }) {
         </button>
       </div>
     </section>
+  </FadeIn>    
   );
 }
 

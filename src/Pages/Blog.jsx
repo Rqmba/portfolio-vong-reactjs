@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import articles from '../Data/dataArticle';
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
+import FadeIn from "../Components/FramerMotion/FadeIn";
 
 const Blog = () => {
   const [article, setArticle] = useState(null);
@@ -12,6 +13,7 @@ const Blog = () => {
   }
 
   return (
+  <FadeIn>
     <div className="flex flex-col sm:flex-row min-h-screen gap-4 dark:bg-gray-800 dark:text-gray-700">
       {/* Menu latéral */}
       <aside className="w-full sm:w-1/3 lg:w-1/4 min-w-[200px] p-4 shadow-md bg-gray-900 text-white">
@@ -77,6 +79,7 @@ const Blog = () => {
         )}
       </main>
     </div>
+  </FadeIn>    
   );
 };
 

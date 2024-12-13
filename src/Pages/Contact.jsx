@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { FaEnvelope, FaPencilAlt, FaCommentDots } from "react-icons/fa"
 import ContainerCard from "../Components/ContainerCard"
+import FadeIn from "../Components/FramerMotion/FadeIn"
+import AnimatedButton from "../Components/FramerMotion/AnimatedButton"
 
 function Contact() {
   const [formData, setFormdata] = useState({
@@ -20,6 +22,7 @@ function Contact() {
 
 
   return (
+  <FadeIn>
     <ContainerCard>
       <h1 className="text-3xl font-bold mb-8 text-center">Me contacter</h1>
     <form className="max-w-lg mx-auto p-6 bg-gray-900 text-white rounded-lg shadow-md space-y-4">
@@ -63,14 +66,15 @@ function Contact() {
       </div>
 
       {/* Submit Button */}
-      <button
+      <AnimatedButton
         type="submit"
         className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition"
       >
         Envoyer
-      </button>
+      </AnimatedButton>
     </form>
     </ContainerCard>
+  </FadeIn>    
   );
 }
 

@@ -1,6 +1,8 @@
+import FadeIn from "../Components/FramerMotion/FadeIn";
+
 function About() {
   return (
-    <>
+    <FadeIn>
       <div className="container mx-auto px-6 py-12 rounded-lg shadow-lg">
         {/* Section principale */}
         <div className="flex flex-col md:flex-row items-center gap-10">
@@ -58,7 +60,7 @@ function About() {
           </p>
         </div>
       </div>
-    </>
+    </FadeIn> 
   );
 }
 

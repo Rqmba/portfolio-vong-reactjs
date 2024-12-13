@@ -1,8 +1,10 @@
 import ProjectList from "../Components/ProjectList"
 import Projectcard from "../Components/Projectcard"
+import FadeIn from "../Components/FramerMotion/FadeIn";
 
 function Project({ projects }) {
   return (
+  <FadeIn>
     <section className="container mx-auto px-6 mt-10">
       <h1 className="text-3xl font-bold mb-8 text-center">Mes Projets</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -29,6 +31,7 @@ function Project({ projects }) {
         ))}
       </div>
     </section>
+  </FadeIn>    
   );
 }
 
