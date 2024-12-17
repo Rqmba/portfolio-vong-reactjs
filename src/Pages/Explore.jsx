@@ -13,7 +13,7 @@ function Explore({ projects }) {
         Découvrez mes projets et mes compétences en développement web.
       </p>
 
-      {/* Projets phares */}
+     {/* Projets phares */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {featuredProjects.map((project, index) => (
           <div

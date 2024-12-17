@@ -1,9 +1,11 @@
+import expenseTrackerImg from "../Assets/ImgProject/expense-tracker.jpg";
+
 
 const projects = [
     {
         "id": 1, 
         "title": "Aout 2024 - Suivi de dépenses, ReactJs",
-        "picture": "",
+        "picture": expenseTrackerImg,
         "link": "none", 
         "description": "Pour mon commencer mon apprentissage sur React, j'ai crée une appli de suivi de dépenses."
     },

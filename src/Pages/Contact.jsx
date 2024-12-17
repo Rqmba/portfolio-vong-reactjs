@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { FaEnvelope, FaPencilAlt, FaCommentDots } from "react-icons/fa"
-import ContainerCard from "../Components/ContainerCard"
 import FadeIn from "../Components/FramerMotion/FadeIn"
 import AnimatedButton from "../Components/FramerMotion/AnimatedButton"
 
@@ -23,9 +22,8 @@ function Contact() {
 
   return (
   <FadeIn>
-    <ContainerCard>
-      <h1 className="text-3xl font-bold mb-8 text-center">Me contacter</h1>
-    <form className="max-w-lg mx-auto p-6 bg-gray-900 text-white rounded-lg shadow-md space-y-4">
+      <h1 className="text-3xl font-bold mb-8 mt-8 text-center">Me contacter</h1>
+    <form className="max-w-lg mx-auto p-6  text-white rounded-lg shadow-md space-y-4">
       {/* Email Field */}
       <div className="flex items-center border border-gray-700 rounded-lg p-2">
         <FaEnvelope className="text-gray-400 mr-3" />
@@ -73,7 +71,6 @@ function Contact() {
         Envoyer
       </AnimatedButton>
     </form>
-    </ContainerCard>
   </FadeIn>    
   );
 }

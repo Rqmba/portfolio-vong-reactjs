@@ -79,7 +79,7 @@ const articleBlog = {
           },
           {
             type: "paragraph",
-            text: `J’ai suivi cette routine exigeante pendant huit mois, soit toute la durée de ma formation. Les défis et apprentissages de cette méthode Je suis conscient que cette routine était extrêmement exigeante, tant sur le plan physique que mental. Cependant, mon objectif était clair : réussir ma formation, quitte à mettre de côté ma vie sociale. Cette expérience m’a appris l’importance de la discipline, de la résilience, et de l’engagement pour atteindre mes objectifs. Un rythme équilibré pour progresser durablement Après avoir obtenu mon titre de développeur web, j’ai décidé d’adopter une approche différente, plus équilibrée et durable.`,
+            text: `J’ai suivi cette routine exigeante pendant huit mois, soit toute la durée de ma formation. Je suis conscient que cette routine était extrêmement exigeante, tant sur le plan physique que mental. Cependant, mon objectif était clair : réussir ma formation, quitte à mettre de côté ma vie sociale. Cette expérience m’a appris l’importance de la discipline, de la résilience, et de l’engagement pour atteindre mes objectifs. Après avoir obtenu mon titre de développeur web, j’ai décidé d’adopter une approche différente, plus équilibrée et durable.`,
           },
           {
             type: "heading",
