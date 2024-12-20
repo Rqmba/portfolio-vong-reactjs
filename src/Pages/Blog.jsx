@@ -49,7 +49,7 @@ const Blog = () => {
           <div className="max-w-4xl mx-auto">
             <button
               onClick={handleBack}
-              className="mb-9 text-blue-500 hover:underline"
+              className="mb-9 text-purple-600 hover:underline"
             >
               ← Retour aux articles
             </button>
@@ -72,10 +72,10 @@ const Blog = () => {
                   className="w-full md:w-1/3 h-48 object-cover rounded-lg"
                 />
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold text-blue-500 cursor-pointer hover:underline">
+                  <h2 className="text-2xl font-bold text-purple-600 cursor-pointer hover:underline">
                     Motivation et détermination
                   </h2>
-                  <p className="text-gray-600 dark:text-gray-300 mt-2">
+                  <p className="text-gray-700 dark:text-gray-300 mt-2">
                     Découvrez comment ma passion pour le code m'a guidé dans ma
                     reconversion professionnelle.
                   </p>
@@ -95,10 +95,10 @@ const Blog = () => {
                   className="w-full md:w-1/3 h-48 object-cover rounded-lg"
                 />
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold text-blue-500 cursor-pointer hover:underline">
+                  <h2 className="text-2xl font-bold text-purple-600 cursor-pointer hover:underline">
                     Ma méthode de travail
                   </h2>
-                  <p className="text-gray-600 dark:text-gray-300 mt-2">
+                  <p className="text-gray-700 dark:text-gray-300 mt-2">
                     Découvrez comment une organisation rigoureuse m'a permis de
                     réussir ma formation tout en travaillant.
                   </p>
@@ -118,10 +118,10 @@ const Blog = () => {
                   className="w-full md:w-1/3 h-48 object-cover rounded-lg"
                 />
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold text-blue-500 cursor-pointer hover:underline">
+                  <h2 className="text-2xl font-bold text-purple-600 cursor-pointer hover:underline">
                     Pourquoi j'ai choisi React.js
                   </h2>
-                  <p className="text-gray-600 dark:text-gray-300 mt-2">
+                  <p className="text-gray-700 dark:text-gray-300 mt-2">
                     Découvrez pourquoi React.js est devenu mon choix de cœur
                     pour me spécialiser dans le développement front-end.
                   </p>

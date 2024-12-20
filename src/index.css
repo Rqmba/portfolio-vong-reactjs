@@ -10,14 +10,52 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Pousse le footer vers le bas */
+}
+
+
+.app-background {
+  background-image: url('./Assets/Background/Hexagon-dotted-connect-line-background.jpg');
+  background-size: cover; /* Couvre tout l'écran */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Pas de répétition */
+  min-height: 100vh; /* Hauteur minimale de l'écran */
+}
+
+
+body {
+  background: linear-gradient(to bottom, #f3f4f6, #ffffff);
+  background-size: cover;
+}
+
+
 .transition-all {
   transition: all 0.3s ease-in-out;
 }
 
+/* .bg-nav {
+  background-color: rgba(0, 0, 0); 
+  backdrop-filter: blur(10px); 
+} */
+
 .bg-nav {
-  background-color: rgba(0, 0, 0, 0.8); /* Noir transparent */
-  backdrop-filter: blur(10px); /* Effet de flou */
+  background-color: rgba(230, 230, 230, 0.9); /* Ajuste selon tes préférences */
+  backdrop-filter: blur(10px); /* Effet de flou pour mieux s'intégrer au fond */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optionnel : Ajoute une légère ombre pour donner du relief */
 }
+
 
 
 

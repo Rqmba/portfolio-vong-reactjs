@@ -8,12 +8,11 @@ function Explore({ projects }) {
   return (
   <FadeIn>  
     <section className="container mx-auto px-6 mt-10">
-      <h1 className="text-3xl font-bold mb-6">Bienvenue sur mon Portfolio !</h1>
-      <p className="text-gray-400 mb-10">
-        Découvrez mes projets et mes compétences en développement web.
+      <h1 className="text-3xl font-bold mb-6 text-gray-700">Bienvenue sur mon Portfolio !</h1>
+      <p className="text-gray-700 mb-10">
+        Je suis Vong Jordan, développeur spécialisé en ReactJs et Nodejs. Découvrez mes projets et ma passion pour le développement web
       </p>
 
-     {/* Projets phares */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {featuredProjects.map((project, index) => (
           <div
@@ -28,7 +27,7 @@ function Explore({ projects }) {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-purple-600 hover:underline"
             >
               Voir le projet
             </a>
@@ -39,7 +38,7 @@ function Explore({ projects }) {
       <div className="mt-6 text-center">
         <button
           onClick={() => navigate('/projects')}
-          className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600"
+          className="px-4 py-2 bg-purple-600 text-white font-semibold rounded-lg hover:bg-blue-600"
         >
           Voir tous les projets
         </button>

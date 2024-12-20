@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FaHome, FaProjectDiagram, FaUser, FaAddressBook, FaToolbox, FaPen } from "react-icons/fa";
 import { CiWallet } from "react-icons/ci";
-import AnimatedButton from "./FramerMotion/AnimatedButton";
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,19 +23,19 @@ function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div
-            className="flex items-center space-x-2 cursor-pointer hover:text-green-500 transition duration-300"
+            className="flex items-center space-x-2 cursor-pointer hover:text-purple-600 transition duration-300"
             onClick={() => navigate('/')}
           >
             <CiWallet className="text-2xl" />
-            <p className="font-bold text-lg">J.VONG Portfolio</p>
+            <p className="font-bold text-lg text-gray-700">J.VONG Portfolio</p>
           </div>
 
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
             <div
-              className={`hover:text-green-500 cursor-pointer flex items-center space-x-2  ${
-               isActive('/') ? 'text-green-500 cursor-pointer' : 'text-gray-400'
+              className={`hover:text-purple-600 cursor-pointer flex items-center space-x-2  ${
+               isActive('/') ? 'text-purple-600 cursor-pointer' : 'text-gray-700'
              }`}
               onClick={() => navigate('/')}
             >
@@ -43,8 +43,8 @@ function Navbar() {
               <p className="text-sm">Accueil</p>
             </div>
             <div
-              className={`hover:text-green-500 cursor-pointer flex items-center space-x-2  ${
-                isActive('/projects') ? 'text-green-500 cursor-pointer' : 'text-gray-400'
+              className={`hover:text-purple-600cursor-pointer flex items-center space-x-2  ${
+                isActive('/projects') ? 'text-purple-600 cursor-pointer' : 'text-gray-700'
               }`}
               onClick={() => navigate('/projects')}
             >
@@ -52,8 +52,8 @@ function Navbar() {
               <p className="text-sm">Mes projets</p>
             </div>
             <div
-              className={`hover:text-green-500 cursor-pointer flex items-center space-x-2  ${
-                isActive('/skills') ? 'text-green-500 cursor-pointer' : 'text-gray-400'
+              className={`hover:text-purple-600 cursor-pointer flex items-center space-x-2  ${
+                isActive('/skills') ? 'text-purple-600 cursor-pointer' : 'text-gray-700'
               }`}
               onClick={() => navigate('/skills')}
             >
@@ -61,8 +61,8 @@ function Navbar() {
               <p className="text-sm">Mes compétences</p>
             </div>
             <div
-              className={`hover:text-green-500 cursor-pointer flex items-center space-x-2  ${
-                isActive('/blog') ? 'text-green-500 cursor-pointer' : 'text-gray-400'
+              className={`hover:text-purple-600 cursor-pointer flex items-center space-x-2  ${
+                isActive('/blog') ? 'text-purple-600 cursor-pointer' : 'text-gray-700'
               }`}
               onClick={() => navigate('/blog')}
             >
@@ -70,8 +70,8 @@ function Navbar() {
               <p className="text-sm">Blog</p>
             </div>
             <div
-              className={`hover:text-green-500 cursor-pointer flex items-center space-x-2  ${
-                isActive('/about') ? 'text-green-500 cursor-pointer' : 'text-gray-400'
+              className={`hover:text-purple-600 cursor-pointer flex items-center space-x-2  ${
+                isActive('/about') ? 'text-purple-600 cursor-pointer' : 'text-gray-700'
               }`}
               onClick={() => navigate('/about')}
             >
@@ -79,8 +79,8 @@ function Navbar() {
               <p className="text-sm">À propos</p>
             </div>
             <div
-              className={`hover:text-green-500 cursor-pointer flex items-center space-x-2  ${
-                isActive('/contact') ? 'text-green-500 cursor-pointer' : 'text-gray-400'
+              className={`hover:text-purple-600 cursor-pointer flex items-center space-x-2  ${
+                isActive('/contact') ? 'text-purple-600 cursor-pointer' : 'text-gray-700'
               }`}
               onClick={() => navigate('/contact')}
             >
@@ -106,12 +106,12 @@ function Navbar() {
         {/* Mobile Menu */}
           <div
             className={`absolute left-0 right-0 top-full bg-gray-800 text-white py-6 px-4 flex flex-col items-center space-y-4 md:hidden transition-all duration-300 ${
-              isOpen ? "block z-50 opacity-100" : "hidden opacity-0"
+              isOpen ? "block z-100 opacity-100" : "hidden opacity-0"
             }`}
           >
 
           <div
-            className="hover:text-green-500 cursor-pointer"
+            className="hover:text-purple-600 cursor-pointer"
             onClick={() => {
               navigate('/');
               setIsOpen(false);
@@ -120,7 +120,7 @@ function Navbar() {
             Accueil
           </div>
           <div
-            className="hover:text-green-500 cursor-pointer"
+            className="hover:text-purple-600 cursor-pointer"
             onClick={() => {
               navigate('/projects');
               setIsOpen(false);
@@ -129,7 +129,7 @@ function Navbar() {
             Mes projets
           </div>
           <div
-            className="hover:text-green-500 cursor-pointer"
+            className="hover:text-purple-600 cursor-pointer"
             onClick={() => {
               navigate('/skills');
               setIsOpen(false);
@@ -138,7 +138,7 @@ function Navbar() {
             Mes compétences
           </div>
           <div
-            className="hover:text-green-500 cursor-pointer"
+            className="hover:text-purple-600 cursor-pointer"
             onClick={() => {
               navigate('/blog');
               setIsOpen(false);
@@ -147,7 +147,7 @@ function Navbar() {
             Blog
           </div>
           <div
-            className="hover:text-green-500 cursor-pointer"
+            className="hover:text-purple-600 cursor-pointer"
             onClick={() => {
               navigate('/about');
               setIsOpen(false);
@@ -156,7 +156,7 @@ function Navbar() {
             A propos
           </div>
           <div
-            className="hover:text-green-500 cursor-pointer"
+            className="hover:text-purple-600 cursor-pointer"
             onClick={() => {
               navigate('/contact');
               setIsOpen(false);
