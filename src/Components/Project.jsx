@@ -1,4 +1,4 @@
-import Projectcard from "./Projectcard";
+import Projectcard from "./ContainerCard";
 
 function Project({ data }) {
   return (
@@ -7,6 +7,7 @@ function Project({ data }) {
       <img src={data.picture} alt={data.title} />
       <a href={data.link}>Voir le projet</a>
       <p>{data.description}</p>
+      <p>{data.skill}</p>
     </Projectcard>
   );
 }

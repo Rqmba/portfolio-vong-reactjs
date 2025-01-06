@@ -17,6 +17,18 @@ function Project({ projects }) {
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 {project.description}
               </p>
+
+              <div className="flex flex-wrap gap-2 mt-4 mb-4">
+                {project.skill.split(", ").map((skill, idx) => (
+                    <span
+                      key={idx}
+                      className="px-3 py-1 text-xs font-semibold bg-purple-600 text-white rounded-full"
+                    >
+                      {skill}
+                    </span>
+                ))}
+              </div>
+
               <a
                 href={project.link}
                 target="_blank"
