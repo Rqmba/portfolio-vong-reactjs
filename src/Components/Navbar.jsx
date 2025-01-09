@@ -17,7 +17,7 @@ function Navbar() {
   };
 
   return (
-    <header className="bg-nav text-white shadow-l">
+    <header className="bg-nav text-white shadow-l z-50">
       <nav className="relative container mx-auto p-6">
         {/* Flex container */}
         <div className="flex items-center justify-between">
@@ -105,8 +105,8 @@ function Navbar() {
 
         {/* Mobile Menu */}
           <div
-            className={`absolute left-0 right-0 top-full bg-gray-800 text-white py-6 px-4 flex flex-col items-center space-y-4 md:hidden transition-all duration-300 ${
-              isOpen ? "block z-100 opacity-100" : "hidden opacity-0"
+            className={`absolute left-0 right-0 top-full bg-nav text-gray-700 py-6 px-4 flex flex-col items-center space-y-4 md:hidden transition-all duration-300 ${
+              isOpen ? "opacity-100" : "opacity-0"
             }`}
           >
 

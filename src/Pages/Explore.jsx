@@ -12,23 +12,21 @@ function Explore({ projects }) {
   <FadeIn>
   <section className="container mx-auto px-6 mt-10">
     
-  <h1 className="text-3xl font-bold mb-6 text-gray-700">Bienvenue sur mon Portfolio !</h1>
-    <p className="text-gray-700 mb-10">
-      Je suis Vong Jordan, développeur passionné en reconversion, je crée principalement des projets avec React.JS et Node.js.
+  <h1 className="text-3xl text-center font-bold mb-6 text-gray-700">Bienvenue, je suis Vong Jordan !</h1>
+    <p className="text-gray-700 text-center mb-10">
+      Développeur passionné en reconversion, je crée principalement des projets avec React.JS et Node.js.
     </p>
 
-    <p className="text-gray-700 mb-10">
-      Découvrez mes projets et mon parcours en développement web.
-    </p>
+    <h2 className="text-2xl text-center font-bold mb-6 text-gray-700">Mes compétences</h2>
 
-    <div className="flex justify-center gap-4 mb-6 mt-6">
+    <div className="flex justify-center gap-4 mb-12 mt-6">
       <span className="px-3 py-1 bg-gray-200 text-gray-800 rounded-lg">React.js</span>
       <span className="px-3 py-1 bg-gray-200 text-gray-800 rounded-lg">Node.js</span>
       <span className="px-3 py-1 bg-gray-200 text-gray-800 rounded-lg">MongoDB</span>
       <span className="px-3 py-1 bg-gray-200 text-gray-800 rounded-lg">TailwindCSS</span>
     </div>
 
-    <h2 className="text-2xl text-center mb-6 font-bold text-gray-700">Voici mes derniers projets</h2>
+    <h2 className="text-2xl text-center mb-6 mt-6 font-bold text-gray-700">Voici mes derniers projets</h2>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {projects
@@ -74,6 +72,22 @@ function Explore({ projects }) {
       >
         <FaFolderOpen className="mr-2" /> Voir tous mes projets
       </button>
+
+      <h1 className="text-3xl text-center font-bold mb-6 mt-6 text-gray-700">A propos de moi</h1>
+      <p className="text-gray-700 mb-4">
+        Développeur passionné en reconversion, je suis en train de construire mon parcours dans le développement web.
+      </p>
+      <p className="text-gray-700 mb-4">
+        Je me spécialise actuellement dans <strong>React.js</strong>, un framework que j'apprécie particulièrement pour sa flexibilité et sa popularité.
+      </p>
+      <p className="text-gray-700 mb-4">
+        Mon objectif est de maîtriser d'autres outils modernes tels que <strong>Laravel</strong> et <strong>Next.js</strong> pour élargir mes compétences et créer des solutions adaptées aux besoins des entreprises.
+      </p>
+      <p className="text-gray-700 mb-6">
+        <em>
+          N'hésitez pas à parcourir mon portfolio pour découvrir mes projets ou à me contacter directement pour discuter d'opportunités professionnelles.
+        </em>
+      </p>
       <button
         onClick={() => navigate('/about')}
         className="flex items-center justify-center px-4 py-2 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition hover:scale-105"
