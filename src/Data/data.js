@@ -11,7 +11,8 @@ const projects = [
         "id": 1, 
         "title": "Aout 2024 - Feedback app",
         "picture": feedbackImg,
-        "link": "none", 
+        "link": "none",
+        "github": "https://github.com/Rqmba/feedback-app", 
         "description": "Pour mon commencer mon apprentissage sur React, j'ai crée une petite appli de feedback de commentaires.",
         "skill" : "React.Js, Css"
     },
@@ -20,7 +21,8 @@ const projects = [
         "id": 2, 
         "title": "Aout 2024 - Suivi de dépenses, ReactJs",
         "picture": expenseTrackerImg,
-        "link": "none", 
+        "link": "none",
+        "github": "https://github.com/Rqmba/expense-tracker-react", 
         "description": "Ensuite, j'ai crée une appli de suivi de dépenses.",
         "skill" : "React.Js, Css, Node.js"
     },
@@ -28,7 +30,8 @@ const projects = [
         "id": 3, 
         "title": "Septembre 2024 - Github finder",
         "picture": gitHubFinderImg,
-        "link": "none", 
+        "link": "none",
+        "github": "https://github.com/Rqmba/github-finder", 
         "description": "J'ai ensuite crée une appli de recherche de profils de Github",
         "skill" : "React.Js, Css"
     },
@@ -36,7 +39,8 @@ const projects = [
         "id": 4, 
         "title": "Novembre 2024 - House Marketplace",
         "picture": houseMarketplaceImg,
-        "link": "none", 
+        "link": "none",
+        "github": "https://github.com/Rqmba/house-marketplace", 
         "description": "Création d'un site web de ventes de maisons. Interface, utilisateur, etc...",
         "skill" : "React.Js, Css, Firebase"
     },

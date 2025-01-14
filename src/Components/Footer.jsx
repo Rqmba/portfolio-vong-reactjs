@@ -20,7 +20,7 @@ function Footer() {
           </h3>
           <button
             onClick={() => navigate('/contact')}
-            className="mt-2 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition"
+            className="mt-2 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 hover:scale-110 transition-transform duration-300"
           >
             Contactez-moi
           </button>
@@ -34,20 +34,20 @@ function Footer() {
           {/* Icônes des réseaux sociaux */}
           <div className="flex space-x-4">
             <a
-              href="https://github.com/ton-profil"
+              href="https://github.com/Rqmba"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="hover:text-white transition"
+              className="hover:text-white hover:scale-110 transition-transform duration-300"
             >
               <FaGithub className="h-8 w-8" />
             </a>
             <a
-              href="https://linkedin.com/in/ton-profil"
+              href="https://www.linkedin.com/in/jordan-vong-05aa4a266/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="hover:text-white transition"
+              className="hover:text-white hover:scale-110 transition-transform duration-300"
             >
               <FaLinkedin className="h-8 w-8" />
             </a>

@@ -29,6 +29,7 @@ function Project({ projects }) {
                 ))}
               </div>
 
+            <div className="flex flex-col gap-2 mt-4 mb-4">      
               <a
                 href={project.link}
                 target="_blank"
@@ -37,6 +38,15 @@ function Project({ projects }) {
               >
                 Voir le projet
               </a>
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                Voir le Github
+              </a>
+            </div>  
             </ContainerCard>
           ))}
         </div>

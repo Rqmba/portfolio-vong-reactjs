@@ -6,6 +6,7 @@ function Project({ data }) {
       <h2>{data.title}</h2>
       <img src={data.picture} alt={data.title} />
       <a href={data.link}>Voir le projet</a>
+      <a href={data.github}>Voir le GitHub</a>
       <p>{data.description}</p>
       <p>{data.skill}</p>
     </Projectcard>
