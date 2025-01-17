@@ -59,6 +59,12 @@ function About() {
             démontrer mes compétences en tant que développeur.
           </p>
         </div>
+        <button
+          className="px-4 py-2 mt-6  bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition"
+          onClick={() => window.open('/Docs/CvDevVong2025.pdf', '_blank')}
+          >
+          Télécharger mon CV
+        </button>
       </div>
     </FadeIn> 
   );
