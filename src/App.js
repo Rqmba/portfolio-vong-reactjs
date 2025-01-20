@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'; 
 import DataProjects from './Data/data';
 import Navbar from "./Components/Navbar";
 import Footer from './Components/Footer';
@@ -16,6 +18,19 @@ function App() {
   return (
     <div className="app-background flex flex-col min-h-screen text-gray-800 dark:text-gray-200">
       <Router>
+        <ToastContainer
+          position="top-right" // Position du toast
+          autoClose={5000} // Fermeture automatique en 5 secondes
+          hideProgressBar={false}
+          newestOnTop={true}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored" // Thème coloré pour s'adapter à ton design
+        />
+
         {/* Navbar */}
         <Navbar />
         

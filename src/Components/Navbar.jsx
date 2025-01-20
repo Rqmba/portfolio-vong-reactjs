@@ -76,7 +76,7 @@ function Navbar() {
               onClick={() => navigate('/about')}
             >
               <FaUser className="text-2xl hover:scale-110 transition-transform duration-300" />
-              <p className="text-sm">À propos</p>
+              <p className="text-sm">À mon sujet</p>
             </div>
             <div
               className={`hover:text-purple-600 cursor-pointer flex items-center space-x-2  ${
