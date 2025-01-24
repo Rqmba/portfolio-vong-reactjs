@@ -1,5 +1,6 @@
 import FadeIn from "../Components/FramerMotion/FadeIn";
 
+
 function About() {
   return (
     <FadeIn>
@@ -26,9 +27,9 @@ function About() {
           {/* Colonne de droite avec une image */}
           <div className="flex flex-col items-center md:w-1/2 space-y-6">
             <img
-              src="https://via.placeholder.com/300x300"
+              src="/Docs/PhotoProfil.jpg"
               alt="Photo de Vong Jordan"
-              className="rounded-full shadow-md"
+              className="w-1/2 h-auto rounded-full shadow-md"
             />
           </div>
         </div>

@@ -19,8 +19,8 @@ function App() {
     <div className="app-background flex flex-col min-h-screen text-gray-800 dark:text-gray-200">
       <Router>
         <ToastContainer
-          position="top-right" // Position du toast
-          autoClose={5000} // Fermeture automatique en 5 secondes
+          position="top-right" 
+          autoClose={5000} 
           hideProgressBar={false}
           newestOnTop={true}
           closeOnClick
@@ -28,13 +28,9 @@ function App() {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          theme="colored" // Thème coloré pour s'adapter à ton design
+          theme="colored" 
         />
-
-        {/* Navbar */}
         <Navbar />
-        
-        {/* Main content area */}
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Explore projects={data} />} />
@@ -45,8 +41,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-        
-        {/* Footer */}
         <Footer />
       </Router>
     </div>

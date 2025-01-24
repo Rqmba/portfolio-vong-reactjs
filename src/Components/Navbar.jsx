@@ -153,7 +153,7 @@ function Navbar() {
               setIsOpen(false);
             }}
           >
-            A propos
+            À mon sujet
           </div>
           <div
             className="hover:text-purple-600 cursor-pointer"
