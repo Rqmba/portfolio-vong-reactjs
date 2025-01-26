@@ -18,7 +18,7 @@ module.exports = {
         wider: '0.05em', // Espacement des lettres
       },
       colors: {
-        // customGray: 'rgba(230, 230, 230, 0.9)',
+        customGray: 'rgba(230, 230, 230, 0.9)',
       },
     },
   },

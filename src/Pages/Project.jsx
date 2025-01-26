@@ -14,7 +14,7 @@ function Project({ projects }) {
                 alt={project.title}
                 className="w-full h-auto rounded-lg mb-4"
               />
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
+              <p className="text-gray-700 mb-4">
                 {project.description}
               </p>
 

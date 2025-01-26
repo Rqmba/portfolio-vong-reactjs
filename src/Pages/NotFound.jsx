@@ -3,7 +3,7 @@ import { FaHome } from "react-icons/fa";
 
 function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800">
       <h1 className="text-6xl font-extrabold mb-4">404</h1>
       <h2 className="text-2xl font-semibold mb-4">Page introuvable</h2>
       <p className="mb-8 text-center">
