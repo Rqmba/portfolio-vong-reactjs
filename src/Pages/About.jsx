@@ -9,13 +9,13 @@ function About() {
         <div className="flex flex-col md:flex-row items-center gap-10">
           {/* Colonne de gauche */}
           <div className="flex flex-col md:w-1/2 space-y-6 text-center md:text-left">
-            <h1 className="text-4xl font-extrabold">
+            <h1 className="text-4xl font-extrabold text-gray-700">
               Vong Jordan
             </h1>
-            <h2 className="text-2xl font-semibold">
+            <h2 className="text-2xl font-semibold text-gray-700">
               Développeur Fullstack
             </h2>
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed text-gray-700">
               Je code principalement sous{" "}
               <span className="text-cyan-400">Node.js</span>,{" "}
               <span className="text-blue-400">Angular</span>,{" "}
@@ -39,7 +39,7 @@ function About() {
 
         {/* Section secondaire */}
         <div className="grid md:grid-cols-2 gap-8">
-          <p className="text-justify leading-relaxed text-lg">
+          <p className="text-justify leading-relaxed text-lg text-gray-700">
             Diplômé depuis juillet 2024, d'un titre de développeur, je recherche
             un poste de développeur, plus précisément dans le front-end. J'ai
             obtenu ce diplôme dans le cadre d'une reconversion, car mon secteur
@@ -51,7 +51,7 @@ function About() {
             différents langages, pour améliorer mes compétences et par passion
             pour l'informatique.
           </p>
-          <p className="text-justify leading-relaxed text-lg">
+          <p className="text-justify leading-relaxed text-lg text-gray-700">
             Ce portfolio vise à me mettre en valeur sur le marché du travail.
             Diplômé en juillet 2024, je n'ai malheureusement pas d'expérience en
             entreprise, ayant réalisé ma formation tout en travaillant. À

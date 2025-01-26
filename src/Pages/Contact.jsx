@@ -36,18 +36,18 @@ function Contact() {
       return;
     }
 
-    // Envoyer via EmailJS
+    
     emailjs
       .send(
-        "service_83xmxce", // Remplacez par votre ID de service EmailJS
-        "template_k549vox", // Remplacez par votre ID de template EmailJS
+        "service_83xmxce", 
+        "template_k549vox", 
         {
           from_name: formData.name,
           subject: formData.subject,
           email: formData.email,
           message: formData.message,
         },
-        "Q_HQ5mrm3DMhKb73x" // Remplacez par votre clé publique EmailJS
+        "Q_HQ5mrm3DMhKb73x"
       )
       .then(() => {
         toast.success("Message envoyé avec succès !");
@@ -60,7 +60,7 @@ function Contact() {
 
   return (
     <FadeIn>
-      <h1 className="text-3xl font-bold mb-8 mt-8 text-center">Me contacter</h1>
+      <h1 className="text-3xl font-bold mb-8 mt-8 text-center text-gray-700">Me contacter</h1>
       <form
         onSubmit={onSubmit}
         className="max-w-lg mx-auto p-6 bg-slate-200 text-white rounded-lg shadow-md space-y-4"
