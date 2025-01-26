@@ -11,6 +11,7 @@ import Project from './Pages/Project';
 import Skills from './Pages/Skills';
 import About from './Pages/About';
 import Blog from "./Pages/Blog";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   const [data, myData] = useState(DataProjects);
@@ -39,6 +40,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

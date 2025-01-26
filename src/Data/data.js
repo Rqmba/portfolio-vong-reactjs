@@ -12,7 +12,7 @@ const projects = [
         "id": 1, 
         "title": "Aout 2024 - Feedback app",
         "picture": feedbackImg,
-        "link": "none",
+        "link": "https://feedback-app-beta-jade.vercel.app/",
         "github": "https://github.com/Rqmba/feedback-app", 
         "description": "Pour mon commencer mon apprentissage sur React, j'ai crée une petite appli de feedback de commentaires.",
         "skill" : "React.Js, Css"
@@ -41,7 +41,7 @@ const projects = [
         "id": 4, 
         "title": "Novembre 2024 - Portfolio",
         "picture": portfoliovongImg,
-        "link": "none",
+        "link": "https://portfolio-vong-reactjs.vercel.app/",
         "github": "https://github.com/Rqmba/portfolio-vong-reactjs", 
         "description": "Création de mon portfolio, pour valoriser mes compétences",
         "skill" : "React.Js, tailwind"
